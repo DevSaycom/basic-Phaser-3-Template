@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="">
+  <title>Document</title>
+
+  <script src="./bower_components/phaser/dist/phaser.js"></script>
+  <script src="./scrips/GlobalVariables.js"></script>
+  <script src="./scrips/Preload.js"></script>
+  <script src="./scrips/MainMenu.js"></script>
+  <script src="./scrips/GamePlay.js"></script>
+</head>
+<body>
+<script>
+  //On page load, create game config
+  var config = {
+    type: Phaser.AUTO,
+    width: 640,
+    height: 480,
+    scene: myGame.scenes
+  }
+
+  var game = new Phaser.Game(config)
+  </script>
+</body>
+</html>
